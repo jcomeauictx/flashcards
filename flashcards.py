@@ -36,6 +36,8 @@ def flashcards(front_first=False, front_time=1, rear_time=3, fileglob=None):
     for filename in glob(os.path.expanduser(fileglob)):
         pages.extend(PdfReader(filename).pages)
     logging.debug('%d pages found.', len(pages))
+    for page in pages:
+        print(repr(page.Contents.stream))
 
 if __name__ == '__main__':
     flashcards(*sys.argv[1:])
