@@ -1,4 +1,4 @@
-GLOB := ~/Downloads/Clanceys*.pdf
+GLOB := ~/Downloads/*Definitions.docx.pdf
 export
 env:
 	$@
