@@ -13,13 +13,20 @@ def flashcards(front_first=False, front_time=1, rear_time=3, fileglob=None):
     Read in all files and display flashcards from the contents.
 
     Files must be in a specific format, with a bolded word or phrase,
-    followed by a colon, followed by the definition.
+    followed by a colon, followed by the definition, followed by further
+    explanation, examples, or "key words and phrases" with an appropriate
+    header.
 
     For example:
 
     Negligence: Negligence is found where a duty is owed to the plaintiff,
     that duty has been breached, and the plaintiff has as a result suffered
     damages.
+
+    KEY WORDS and PHRASES:
+        Duty is owed
+        Duty has been breached
+        Plaintiff suffered damages
 
     From the above, in its default configuration, flashcards will show
     the definition of negligence for 3 seconds, then the word Negligence
